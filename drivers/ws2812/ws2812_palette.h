@@ -1,0 +1,27 @@
+#ifndef WS2812_PALETTE_H
+#define WS2812_PALETTE_H
+
+#include "ws2812.h"
+
+typedef enum
+{
+    WS2812_COLOR_RED = 0U,
+    WS2812_COLOR_ORANGE,
+    WS2812_COLOR_YELLOW,
+    WS2812_COLOR_GREEN,
+    WS2812_COLOR_SPRING,
+    WS2812_COLOR_CYAN,
+    WS2812_COLOR_BLUE,
+    WS2812_COLOR_PURPLE,
+    WS2812_COLOR_MAGENTA,
+    WS2812_COLOR_PINK,
+    WS2812_COLOR_WHITE,
+    WS2812_COLOR_WARM_WHITE,
+    WS2812_COLOR_COUNT
+} WS2812_ColorId;
+
+uint32_t WS2812_PaletteCount(void);
+WS2812_Color WS2812_PaletteGet(WS2812_ColorId color_id);
+WS2812_Color WS2812_ColorScale(WS2812_Color color, uint8_t brightness);
+
+#endif

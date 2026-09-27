@@ -1,0 +1,7 @@
+/build/
+/external/
+*.elf
+*.hex
+*.bin
+*.map
+*.su
